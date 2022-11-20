@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pr1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form method="get/post" action="/">
+    <input name="firstNumber" type="text">
+    <select name = "sign">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input name="secondNumber" type="text">
+    <input formmethod="get" type="submit" value="Get">
+    <input formmethod="post" type="submit" value="Post">
+    <p th:text="'Result: ' + ${result}"/>
+</form>
+</body>
+</html>
